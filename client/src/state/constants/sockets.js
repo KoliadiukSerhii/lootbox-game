@@ -1,0 +1,1 @@
+export const SET_WS_SOCKET = 'SET_WS_SOCKET';

@@ -1,0 +1,91 @@
+.grid {
+    &__title {
+        color: var(--color-white);
+        text-align: center;
+    }
+
+    &__container {
+        display: grid;
+        margin-top: 24px;
+        grid-template-columns: repeat(3, 1fr);
+        border-radius: var(--border-radius-big);
+        border: 1px solid var(--color-cold-blue);
+        background-color: var(--color-dark-blue-translucent);
+
+        &_item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            cursor: pointer;
+            padding: var(--padding-section-basic);
+            border: 1px solid var(--color-cold-blue);
+
+            &_name {
+                margin-top: 4px;
+                font-size: var(--font-size-14);
+                font-weight: var(--font-weight-normal);
+            }
+
+            & svg {
+                color: var(--color-gold);
+                font-size: var(--font-size-24);
+            }
+
+            &:first-child {
+                border-top-left-radius: var(--border-radius-big);
+            }
+
+            &:nth-child(3) {
+                border-top-right-radius: var(--border-radius-big);
+            }
+
+            &:nth-last-child(3) {
+                border-bottom-left-radius: var(--border-radius-big);
+            }
+
+            &:last-child {
+                border-bottom-right-radius: var(--border-radius-big);
+            }
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+    }
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--color-dark-blue-translucent);
+
+    &__container {
+        overflow: hidden;
+        margin-top: 24px;
+        border-collapse: collapse;
+        border: 1px solid var(--color-cold-blue);
+        border-radius: var(--border-radius-big);
+    }
+
+    &__title {
+        margin-top: 48px;
+        font-size: var(--font-size-24);
+        color: var(--color-white);
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin-top: 16px;
+        color: var(--color-white);
+        font-size: var(--font-size-16);
+        text-align: center;
+    }
+
+    &__cell {
+        text-align: left;
+        color: var(--color-white);
+        padding: var(--padding-section-small);
+        border: 1px solid var(--color-cold-blue);
+    }
+}

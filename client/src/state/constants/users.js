@@ -1,0 +1,5 @@
+export const SET_USER = 'SET_USER';
+export const SET_TOP_USERS = 'SET_TOP_USERS';
+export const SET_ONLINE_USERS = 'SET_ONLINE_USERS';
+export const SET_CURRENT_USER_POINTS = 'SET_CURRENT_USER_POINTS';
+export const LOGOUT = 'LOGOUT';

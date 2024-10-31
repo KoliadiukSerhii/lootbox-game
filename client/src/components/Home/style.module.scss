@@ -1,0 +1,19 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+
+    &__left {
+        width: 280px;
+        height: 100%;
+    }
+
+    &__right {
+        padding: var(--padding-section-big);;
+        width: calc(100vw - 280px);
+        height: 100%;
+        overflow-y: scroll;
+    }
+}

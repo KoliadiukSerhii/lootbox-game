@@ -1,0 +1,5 @@
+{
+    "port": 8000,
+    "mongoURL": "mongodb+srv://root:root@cloud.fplbb.mongodb.net/cloud?retryWrites=true&w=majority&appName=cloud",
+    "secretKey": "secret-key"
+}
